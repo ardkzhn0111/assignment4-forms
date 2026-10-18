@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve a table</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container py-4">
+  <section class="form-card mx-auto">
+    <h1>Reserve a table</h1>
+    <form action="success.html" method="get" class="p-4">
+      <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="name">Your name</label>
+        <input class="form-control" type="text" id="name" name="name" required autocomplete="name">
+
+      </div>
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" type="email" id="email" name="email" required autocomplete="email">
+
+      </div>
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="phone">Phone</label>
+        <input class="form-control" type="tel" id="phone" name="phone" required autocomplete="tel">
+
+      </div>
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="guests">Guests</label>
+        <input class="form-control" type="number" id="guests" name="guests" required min="1" step="1">
+
+      </div>
+      <div class="col-12 col-md-6">
+        <label class="form-label" for="date">Date</label>
+        <input class="form-control" type="date" id="date" name="date" required>
+
+      </div>
+      <fieldset class="col-12">
+        <legend class="form-label">Seating</legend>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="seating" id="inside" value="inside" required>
+          <label class="form-check-label" for="inside">Inside</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="seating" id="terrace" value="terrace" required>
+          <label class="form-check-label" for="terrace">Terrace</label>
+        </div>
+      </fieldset>
+      <div class="col-12">
+        <label class="form-label" for="meal">Meal</label>
+        <select class="form-select" id="meal" name="meal" required>
+          <option value="">Choose a meal</option>
+          <option value="lunch">Lunch</option><option value="dinner">Dinner</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <label class="form-label" for="comments">Comments optional</label>
+        <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+      </div>
+      <div class="col-12 form-check ms-2">
+        <input class="form-check-input" type="checkbox" id="terms" name="terms" value="yes" required>
+        <label class="form-check-label" for="terms">I agree to the terms</label>
+      </div>
+      </div>
+      <button class="btn btn-find mt-4" type="submit">Reserve</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>

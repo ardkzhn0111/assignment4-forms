@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("assets/montserrat-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face { font-family: Montserrat; src: url("assets/montserrat-semibold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: Montserrat; src: url("assets/montserrat-bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+body { background: #E6EFEC; color: #16302B; font-family: Montserrat, sans-serif; }
+.form-card { width: 100%; max-width: 52rem; background: white; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 .8rem 1.7rem #16302b26; }
+h1 { background: #0F6B5F; color: white; font-size: 1.4rem; font-weight: 700; padding: 1.5rem 2rem; margin: 0; }
+.form-label { font-size: .9rem; font-weight: 600; }
+.form-control, .form-select { background-color: #F4F7F5; border-color: #d4e2dd; border-radius: .6rem; }
+.form-floating > label { margin-left: .75rem; }
+.input-group-text { background: #0F6B5F; color: white; border-color: #0F6B5F; }
+.form-check-input:checked { background-color: #0F6B5F; border-color: #0F6B5F; }
+.btn { border-radius: 2rem; padding: .6rem 1.5rem; font-weight: 600; }
+.btn-outline-success { --bs-btn-color: #0F6B5F; --bs-btn-border-color: #0F6B5F; --bs-btn-active-bg: #0F6B5F; --bs-btn-active-border-color: #0F6B5F; }
+.btn-find { background: #F2A93B; color: #16302B; }
+.btn-find:hover { background: #e49b2d; }
+.btn-clear { border: 1px solid #16302B; color: #16302B; }
+.btn-clear:hover { background: #E6EFEC; }
+.actions { flex-direction: column-reverse; }
+:focus-visible { outline: 3px solid #0F6B5F; outline-offset: 3px; }
+.form-control:user-invalid, .form-select:user-invalid, .form-check-input:user-invalid { border: 2px solid #b42318; }
+.form-control:user-valid, .form-select:user-valid { border-color: #0F6B5F; }
+:user-invalid ~ .invalid-feedback,
+fieldset:has(input:user-invalid) > .invalid-feedback { display: block; }
+@media (min-width: 768px) {
+  .actions { flex-direction: row; justify-content: flex-end; }
+}
